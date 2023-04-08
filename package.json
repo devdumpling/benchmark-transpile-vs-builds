@@ -1,8 +1,8 @@
 {
-  "name": "dwells-monorepo-template",
+  "name": "benchmark-transpile-vs-builds",
   "version": "0.0.1",
   "private": true,
-  "description": "Template repo for kicking off DevStack projects",
+  "description": "Benchmarking Next transpile vs turbo caching builds",
   "scripts": {
     "build": "turbo run build",
     "build:docs": "turbo run build --filter=docs",

@@ -1,11 +1,11 @@
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>DevStack Template Docs</span>,
+  logo: <span>Template Docs</span>,
   project: {
-    link: "https://github.com/devdumpling/dwells-monorepo-template",
+    link: "https://github.com/devdumpling/benchmark-transpile-vs-builds",
   },
-  docsRepositoryBase: "https://github.com/devdumpling/dwells-monorepo-template",
+  docsRepositoryBase: "https://github.com/devdumpling/benchmark-transpile-vs-builds",
   footer: {
     text: "Nextra Docs Template",
   },
