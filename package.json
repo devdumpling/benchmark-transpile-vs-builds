@@ -13,7 +13,8 @@
     "dev:docs": "turbo run dev --filter=docs",
     "dev:web": "turbo run dev --filter=web",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "watch": "turbo run watch"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",

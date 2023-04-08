@@ -10,7 +10,7 @@
   "module": "./dist/index.module.js",
   "exports": {
     ".": "./dist",
-    "./styles.css": "./dist/index.css"
+    "./styles": "./dist/index.css"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
