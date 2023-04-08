@@ -15,7 +15,7 @@
     "nextra-theme-docs": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "example": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^18.11.17",

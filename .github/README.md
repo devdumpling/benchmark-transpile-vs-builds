@@ -54,6 +54,14 @@ We'll also need some scripts for building and watching.
 
 Okay that should get us going!
 
+### Debuggin Parcel Monorepo Setup
+
+Alright, so after some digging I discovered that there have been _some_ issues in the past with using Parcel in a monorepo. It appears that it actually does quite a bit of heavy lifting on its own when it comes to tailwind/postcss--it even has its own PostCSS parser built in rust that is uh, pretty damn fast. Further it appears to do some amount of caching, further speeding things up.
+
+That's all cool, but I had issues running it from a workspace. It seems like the dependencies have to be in the root (annoying) or you can use globs to specify what you're building. Putting the build deps in the root felt cleaner, so I went with that option for now.
+
+[There was a post around Parcel not working with Turbo](https://github.com/parcel-bundler/parcel/issues/8777), but I didn't find that to be the case so far. Will continue to investigate and see if I have any issues though.
+
 ## Stack
 
 | Category      | Tools                   |

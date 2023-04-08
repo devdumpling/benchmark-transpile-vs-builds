@@ -18,14 +18,16 @@
     "check-types": "tsc --noEmit",
     "watch": "parcel watch"
   },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
+    "@parcel/transformer-typescript-types": "^2.8.3",
     "@types/react": "^18.0.26",
     "eslint": "^8.37.0",
     "eslint-config-dwells": "workspace:*",
-    "parcel": "2.8.3",
-    "postcss": "^8.4.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "postcss": "8.4.21",
+    "tailwindcss": "3.3.1",
     "tailwind-config": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^5.0.3"
