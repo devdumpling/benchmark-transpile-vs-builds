@@ -1,0 +1,15 @@
+{
+  "name": "eslint-config-dwells",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-turbo": "latest",
+    "eslint-plugin-react": "^7.32.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

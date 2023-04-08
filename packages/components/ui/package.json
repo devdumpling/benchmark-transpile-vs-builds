@@ -1,0 +1,32 @@
+{
+  "name": "ui",
+  "version": "0.0.1",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./dist",
+    "./styles.css": "./dist/index.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "check-types": "tsc --noEmit",
+    "dev": "tsup --watch"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "eslint": "^8.37.0",
+    "eslint-config-dwells": "workspace:*",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "tailwind-config": "workspace:*",
+    "tsconfig": "workspace:*",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}

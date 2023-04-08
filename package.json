@@ -1,0 +1,32 @@
+{
+  "name": "dwells-monorepo-template",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Template repo for kicking off DevStack projects",
+  "scripts": {
+    "build": "turbo run build",
+    "build:docs": "turbo run build --filter=docs",
+    "build:web": "turbo run build --filter=web",
+    "build:packages": "turbo run build --filter={packages/*}",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev",
+    "dev:docs": "turbo run dev --filter=docs",
+    "dev:web": "turbo run dev --filter=web",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "eslint": "^8.37.0",
+    "eslint-config-dwells": "workspace:*",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.6",
+    "rimraf": "^4.4.1",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.1.0",
+  "engines": {
+    "node": ">=16.18.0",
+    "pnpm": ">=8.1.0"
+  }
+}
