@@ -60,9 +60,13 @@ Alright, so after some digging I discovered that there have been _some_ issues i
 
 That's all cool, but I had issues running it from a workspace. It seems like the dependencies have to be in the root (annoying) or you can use globs to specify what you're building. Putting the build deps in the root felt cleaner, so I went with that option for now.
 
-[There was a post around Parcel not working with Turbo](https://github.com/parcel-bundler/parcel/issues/8777), but I didn't find that to be the case so far. Will continue to investigate and see if I have any issues though. I am a bit nervous around having both a turbo cache *and* a parcel cache. That feels like a disaster waiting to happen, but let's see how it goes. 
+[There was a post around Parcel not working with Turbo](https://github.com/parcel-bundler/parcel/issues/8777), but I didn't find that to be the case so far. Will continue to investigate and see if I have any issues though. I am a bit nervous around having both a turbo cache _and_ a parcel cache. That feels like a disaster waiting to happen, but let's see how it goes.
 
+### Problems
 
+After some tweaking I was able to get the Parcel setup working in a package. For unclear reasons, `parcel watch` breaks everything, so I'm going to not run that for now. But I can make changes and build and everything works smoothly there. Next question is can I get HMR working across the repo... so far no luck but let's dig in a bit.
+
+Alright so if I turn off parcel cache cross package HMR does sort of work... but not really. While it does compile, the app doesn't seem to pick up on the new classes (e.g. if I changed from `text-red-500` to `text-violet-500` and my app doesn't have a definition (i.e. it was purged) for the violet, then it won't render as expected).
 
 ## Stack
 
