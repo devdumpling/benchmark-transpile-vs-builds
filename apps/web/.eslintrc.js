@@ -1,4 +1,9 @@
 module.exports = {
   root: true,
-  extends: ["custom"],
+  extends: ["dwells"],
+  settings: {
+    next: {
+      rootDir: ["apps/*/"],
+    },
+  },
 };

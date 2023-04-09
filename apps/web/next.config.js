@@ -2,7 +2,7 @@
  * @type {import('next').NextConfig}
  */
 module.exports = {
-  reactStrictMode: true,
+  transpilePackages: ["example"],
   experimental: {
     appDir: true,
     typedRoutes: true,

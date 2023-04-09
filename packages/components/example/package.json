@@ -15,6 +15,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "parcel build",
+    "clean": "rimraf dist",
     "check-types": "tsc --noEmit",
     "watch": "parcel watch"
   },

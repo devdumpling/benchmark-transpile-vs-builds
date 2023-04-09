@@ -68,6 +68,16 @@ After some tweaking I was able to get the Parcel setup working in a package. For
 
 Alright so if I turn off parcel cache cross package HMR does sort of work... but not really. While it does compile, the app doesn't seem to pick up on the new classes (e.g. if I changed from `text-red-500` to `text-violet-500` and my app doesn't have a definition (i.e. it was purged) for the violet, then it won't render as expected).
 
+So that's a bummer. 
+
+There may be some way to get this working, but I'll have to come back to it. Not being able to use HMR across packages is a real problem. 
+
+### Transpiling
+
+The setup for transpiling is much simpler. We just need to update our tailwind config and add our components to the next config.
+
+
+
 ## Stack
 
 | Category      | Tools                   |
