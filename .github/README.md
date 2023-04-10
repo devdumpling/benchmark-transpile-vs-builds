@@ -72,12 +72,14 @@ So that's a bummer.
 
 There may be some way to get this working, but I'll have to come back to it. Not being able to use HMR across packages is a real problem. 
 
+As an aside, while full HMR doesn't work (e.g. running next dev and parcel watch) it does look like running a next dev server and rebuilding in another terminal works. Just seems to be something about the cross-stream HMR. 
+
 ### Transpiling
 
 The setup for transpiling is much simpler. We just need to update our tailwind config and add our components to the next config.
 
 In order to keep things separate, I decided to branch off for transpile, since I'll be removing quite a bit from here and don't want to lose the work I've done with parcel. The transpile branch is `transpile-modules`. 
-
+=
 
 
 ## Stack
