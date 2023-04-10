@@ -76,6 +76,8 @@ There may be some way to get this working, but I'll have to come back to it. Not
 
 The setup for transpiling is much simpler. We just need to update our tailwind config and add our components to the next config.
 
+In order to keep things separate, I decided to branch off for transpile, since I'll be removing quite a bit from here and don't want to lose the work I've done with parcel. The transpile branch is `transpile-modules`. 
+
 
 
 ## Stack
